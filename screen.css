@@ -2,10 +2,10 @@
 
 
 .ayy {
-  display: flex;
+  background-color: red;
 }
 .details{
-  background-color: blue;
+  background-color: red;
   margin-top: 50px;}
 .intro{
   justify-content: center;
@@ -20,20 +20,44 @@
 .one{
   left: 50px;
   border: 5px solid mistyrose;
-  height:1000px;
-  width:47%;
+  height:100px;
+  width:20%;
   margin-right: 40px;
   margin-left: 5px;
   float: left;
+  font-family: Helvetica;
+
 }
 .two{
   border: 5px solid mistyrose;
-  height:1000px;
-  width:47%;
+  font-family: Helvetica;
+  height:500px;
+  width:73%;
   float: left;
 }
 h1{
   padding-top: 27px;
   text-align: center;
-  text-decoration: underline;
+  font-family: Helvetica;
+  font-weight: lighter;
 }
+ul{
+  line-height: 23px;
+  list-style-type: none;
+  width:240px;
+  background-color: mistyrose;
+  margin: 0;
+  padding: 0;
+}
+li a{
+  display:block;
+  color: black;
+  padding: 8px 0 3px 10px;
+}
+.active {
+    background-color: #BFABA9;
+    color: black;
+}
+li a:hover:not(.active) {
+  background-color: #E5CDCA;
+    color: white;
