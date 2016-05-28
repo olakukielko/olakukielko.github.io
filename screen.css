@@ -1,11 +1,6 @@
 @import "compass/css3";
 
-
-.ayy {
-  background-color: red;
-}
 .details{
-  background-color: red;
   margin-top: 50px;}
 .intro{
   justify-content: center;
@@ -43,7 +38,7 @@ h1{
 ul{
   line-height: 23px;
   list-style-type: none;
-  width:240px;
+  width:200px;
   background-color: mistyrose;
   margin: 0;
   padding: 0;
@@ -59,4 +54,11 @@ li a{
 }
 li a:hover:not(.active) {
   background-color: #E5CDCA;
-    color: white;
+    color: white;}
+p{
+  margin: 10px;
+  font-weight: lighter;
+}
+h2{
+  margin: 5px;
+}
