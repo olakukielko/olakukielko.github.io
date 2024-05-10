@@ -1,0 +1,53 @@
+.formHeader{
+    margin-bottom: 3vw;
+    color:var(--dark);
+}
+#formContact{ 
+    color: var(--dark);
+    margin: auto;
+    padding: 1rem; 
+    max-width: 50em;
+    border: 2px solid var(--accent);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--neutral);
+}
+#formContact label {
+    padding: 0.8rem 2rem;
+}
+#formContact button{
+    background-color:var(--accent) !important;
+    border:none;
+    width:100%;
+ }
+ #contactOnline{
+    max-width: 50em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto 2em auto;
+    background-color: var(--neutral);
+    border: 2px solid var(--accent);
+    border-radius: .5rem;
+    box-shadow: 0 5px 15px #00000059;
+ }
+ #contact_linkedin, #contact_email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ #contact_email input {
+    background-color: var(--accent);
+    color: var(--highlight);
+    border: 2px solid var(--neutral);
+    border-radius: 0.5em;
+    padding: 0.5em 1.5em;
+ }
+ #formContact .invalid-feedback{
+    text-align: start;
+ }
+ @media only screen and (max-width: 650px) {
+    #formContact{
+        width:100%;
+    }
+}

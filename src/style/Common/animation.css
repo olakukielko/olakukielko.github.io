@@ -1,0 +1,397 @@
+
+/* Home page Delay Order TODO ROTATE*/
+#welcomeComponent #logoLeaf.rotating{
+  animation: 5s rotate-three-dee linear !important;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes rotate-three-dee{
+  from{
+    transform: rotate3d(0,1,0,0deg)
+  }
+  to{
+    transform: rotate3d(0,1,0,360deg)
+  }
+}
+.slower_cloud:nth-of-type(odd){
+    animation-delay: 2.3s !important;
+}
+.slower_cloud:nth-of-type(even){
+    animation-delay: 4s !important;
+}
+.faster_cloud{
+    animation-delay: 8s !important;
+}
+/* Menu items appear order */
+.menuItem.animation-menu-item-appear:nth-of-type(1){
+    animation-delay: 2.0s;
+  }
+  .menuItem.animation-menu-item-appear:nth-of-type(2){
+    animation-delay: 2.2s;
+  }
+  .menuItem.animation-menu-item-appear:nth-of-type(3){
+    animation-delay: 2.3s;
+  }
+/* Menu items hide order */
+  .menuItem.animation-menu-item-hide:nth-of-type(1){
+    animation-delay: 0.2s !important;
+  }
+  .menuItem.animation-menu-item-hide:nth-of-type(2){
+    animation-delay: 0.4s !important;
+  }
+  .menuItem.animation-menu-item-hide:nth-of-type(3){
+    animation-delay: 0.5s !important;
+  }
+/* About Page Delay Order */
+.about_paragraph:nth-of-type(1){
+    animation-delay: 0.5s;
+}
+.about_paragraph:nth-of-type(2){
+    animation-delay: 0.8s;
+}
+.about_paragraph:nth-of-type(3){
+    animation-delay: 1s;
+}
+#about_main{
+    animation-delay: 1s;
+}
+/* Animation Classes */
+/* .leaf_appear {
+    opacity: 0;
+    animation: leaf_appear 1s ease-in-out;
+    animation-fill-mode: forwards;
+} */
+.hide-to-bottom {
+    opacity: 1;
+    animation: ease-in-out 0.7s hide-to-bottom;
+    animation-fill-mode: forwards;
+}
+.hide-to-right {
+    opacity: 1;
+    animation: ease-in-out 1s hide-to-right;
+    animation-fill-mode: forwards;
+}
+.appear-in-from-bottom {
+    opacity: 0;
+    animation: ease-in-out 1s appear-in-from-bottom;
+    animation-fill-mode: forwards;
+}
+  .appear-in-from-left {
+    opacity: 0;
+    animation: ease-in-out 1s appear-in-from-left;
+    animation-fill-mode: forwards;
+  }
+  /* appear menu items in from right on desktop */
+  .animation-menu-item-appear{
+    opacity: 0;
+    animation: ease-in-out 1s appear-in-from-right;
+    animation-fill-mode: forwards;
+  }
+  .animation-menu-item-hide{
+    opacity: 1;
+    animation: ease-in-out 1s hide-to-right;
+    animation-fill-mode: forwards;
+}
+  .appear-in-from-right {
+    opacity: 0;
+    animation: ease-in-out 1s appear-in-from-right;
+    animation-fill-mode: forwards;
+  }
+  .float-in-from-bottom{
+    animation: float-in-from-bottom 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .float-in-from-left{
+    animation: float-in-from-left 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+.cloud-float-left-to-right{
+    opacity:0;
+    animation: cloud-float-left-to-right linear 30s;
+    animation-iteration-count: infinite;
+}
+.cloud-float-left-to-right-slow{
+    opacity:0;
+    animation: cloud-float-left-to-right linear 50s;
+    animation-iteration-count: infinite;
+}
+.cloud-float-left-to-right-slower{
+    opacity:0;
+    animation: cloud-float-left-to-right linear 59s;
+    animation-iteration-count: infinite;
+}
+.leaf-falling{
+    animation-name: leaf-falling;
+    animation-duration: 8s;
+    animation-timing-function:cubic-bezier(.21,.64,.73,.92);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#mainImg{
+    animation: global-fade-in-from-zero ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.menuItem.firstTimeVisit{
+    opacity:0;
+    animation:menu_appear 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .menuItem:mouseOver{
+    animation: gentle-pulse 700ms;
+    animation-fill-mode: forwards;  
+  }
+  @keyframes float-in-from-left {
+    from {
+        transform: translateX(-45rem);
+  }
+    to {
+        transform: translateX(0rem);
+  }
+  }
+  @keyframes float-in-from-bottom {
+    from {
+      transform: translateY(100vh);
+    }
+    to {
+      transform: translateY(0vh);
+    }
+  }
+@keyframes name_appear {
+    from {
+      opacity: 0;
+      transform: translateX(-5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
+  }
+  /* @keyframes leaf_appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);   }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+      }
+      70% {
+        opacity: 1;
+        transform: scale(1) rotate(20deg);
+      } 
+         80% {
+        opacity: 1;
+        transform: scale(1) rotate(-10deg);
+      }  
+      100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+      }
+  } */
+  @keyframes menu_appear{
+    from {
+      opacity: 0;
+      transform: translateX(5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
+  }
+  @keyframes hide-to-bottom {
+    0% {
+      opacity: 1;
+      transform: translateY(0vh);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(-2vh);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(60vh);
+    }
+  }
+  @keyframes hide-to-right {
+    0% {
+      opacity: 1;
+      transform: translateX(0vh);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(-2vh);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(60vh);
+    }
+  }
+  @keyframes appear-in-from-bottom {
+    from {
+      opacity:0;
+      transform: translateY(25vh);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0vh);
+    }
+  }
+  @keyframes appear-in-from-left {
+    from {
+      opacity:0;
+      transform: translateX(-10vh);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0vh);
+    }
+  }
+  @keyframes appear-in-from-right {
+    from {
+      opacity:0;
+      transform: translateX(10vh);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0vh);
+    }
+  }
+  @keyframes app-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes pulse {
+    from{
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
+  @keyframes process {
+    from{
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.1);
+      opacity: 0;
+    }
+  }
+  @keyframes gentle-pulse {
+    from{
+      transform: scale(1);
+      transform-origin: left;
+    }
+    to{
+      transform: scale(1.2);
+      transform-origin: left;
+    }
+  }
+  @keyframes global-fade-in-from-zero  {
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+  }
+@keyframes cloud-float-left-to-right{
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    10%{
+        opacity: 1;
+        transform: translateX(10vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(115vw);
+    }
+}
+@keyframes leaf-falling {
+/* 1st swing to right */
+15% { 
+    transform: translateX(100px)  translateY(100px) rotate(-45deg);   
+    }
+    /* 2nd swing to left */
+35% { 
+    transform: translateX(-80px)  translateY(200px) rotate(-10deg);   
+    }
+    /* 3rd swing to right */
+60% { 
+    transform: translateX(60px)  translateY(300px) rotate(-35deg);   
+    }
+    /* 4th swing to left & settle down */
+100% { 
+    transform: translateX(0px)  translateY(350px) rotate(-20deg);   
+    }
+}
+@keyframes float-in-from-right {
+	from {
+    bottom:-430vh;
+		/* top:250px; */
+    transform: translateX(-50%) rotate(0deg);
+	}
+	to {
+    bottom:-240vh;
+		/* top:-50px; */
+    transform: translateX(-50%) rotate(270deg);
+	}
+}
+@keyframes waterfill {
+	from {
+    bottom:-430vh;
+		/* top:250px; */
+    transform: translateX(-50%) rotate(0deg);
+	}
+	to {
+    bottom:-240vh;
+		/* top:-50px; */
+    transform: translateX(-50%) rotate(270deg);
+	}
+}
+@keyframes opacity-fade-out {
+	from {
+    opacity:1;
+	}
+	to {
+    opacity:0;
+	}
+}
+@keyframes opacity-fade-in {
+	from {
+    opacity:0;
+	}
+	to {
+    opacity:1;
+	}
+}
+@media (prefers-reduced-motion: no-preference) {
+    #bb.listening::after{
+      animation: pulse 2000ms infinite;
+    }
+    #bb.ready::before{
+      animation: process 700ms ;
+    }
+    #bb.ready::after{
+      animation: process 500ms ;
+    }
+  }
+  /*  */
+  @media only screen and (max-width: 650px) {
+    /* appear menu items in from right on desktop */
+    .animation-menu-item-appear{
+        animation: ease-in-out 1s appear-in-from-bottom;
+        animation-fill-mode: forwards;
+    }
+    .animation-menu-item-hide{
+        animation: ease-in-out 1s hide-to-bottom;
+        animation-fill-mode: forwards;
+    }
+}

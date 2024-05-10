@@ -1,0 +1,59 @@
+#header_container{
+    display: flex;
+    flex-direction: row;
+}
+#header_container .spacer{
+    flex:1;
+}
+#header_container .mainName{
+    cursor: pointer;
+    padding: 1em 0;
+    flex:4;
+}
+.mainName a{
+    color: #000;
+    text-decoration: none;
+    cursor:pointer;
+}
+.fill-bg-orange .mainName a{
+    color:white;
+}
+#header_container>div:nth-child(1){
+    flex:4;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+#header_container>div:nth-child(2){
+    flex:1;
+}
+#logoLeaf{
+    height:3em;
+}
+/* .faster_cloud, .slower_cloud
+{
+    left:-30vw;
+} */
+.faster_cloud{
+    top:0;
+    height: 5em;
+}
+.slower_cloud{
+    height: 10em;
+}
+.slower_cloud:nth-of-type(even){
+    top:-2em;
+    left:-4em;
+}
+/* Mobile */
+@media only screen and (max-width: 650px) {
+    #header_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainName {
+        padding:5vh 0;
+    }
+}

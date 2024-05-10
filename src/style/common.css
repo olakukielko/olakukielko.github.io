@@ -1,0 +1,42 @@
+#experienceContainer, #about_container, #contactFormContainer{
+    flex:4;
+    padding: 0 2em;
+}
+.divTitle{
+    padding: .3rem;
+    text-align: start;
+    width:auto;
+}
+.centerContent{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#experienceBox {
+    margin: auto;
+    max-width: 50rem;
+}
+#contactFormBox{
+    margin: auto;
+    max-width: 50rem;
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px) {
+    #menuWheelComponent, #header_container .spacer{
+        flex:2;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #experienceContainer, #contactFormContainer{
+        margin-bottom: 12vw;
+        padding: 0;
+    }
+    #about_container{
+        margin-bottom: 12vw;
+        padding: 0 1em;
+    }
+    .divTitle{
+        margin:1em;
+    }
+}

@@ -1,0 +1,102 @@
+
+.centerContent{
+    font-size: calc(10px + 2vmin);
+}
+/* Experience Item */
+.exp_project_name{
+    font-weight: 700;
+    font-size: 2em;
+}
+.exp_project_description{
+    font-size: 1.5em;
+}
+.exp_position{
+    font-size: 1em;
+}
+.exp_dates{
+    font-size: 1em;
+}
+/* Header */
+.divTitle h2{
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+.divTitle h3{
+    font-size: 1rem;
+}
+#header_container .nameTitle{
+    font-size:larger;
+}
+#header_container .nameSubtitle{
+    font-size:medium;
+}
+#header_container>div:nth-child(1){
+    font-size: calc(10px + 1.5vmin);
+}
+/* About Page */
+.about_paragraph p{
+    font-size: 1.1em;
+    line-height: 1em;
+}
+.about_paragraph strong{
+    font-size:1.2em;
+}
+/* Menu */
+.menuItem a{
+    font-size:0.8em;
+}
+/* Home Page */
+#welcomeComponent .nameTitle{
+    font-size:1.2em;
+    font-weight: 800;
+}
+#about_area{
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Belleza", sans-serif;
+}
+body {
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+.mainName{
+    font-family: "Belleza", sans-serif;
+    font-size: larger;
+    letter-spacing: 0.5vw;
+}
+#contactFormComponent{
+    font-family: Belleza, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+#experienceComponent{
+    font-family: Belleza, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+#home_area{
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 650px) {
+    #nameTitle{
+        font-size:x-large;
+    }
+    .menuItem a {
+        font-size:1em;
+    }
+    #formContact label {
+        font-size:large;
+    }
+    .exp_project_description{
+        font-size:1.2em;
+    }
+    .exp_project_name{
+        font-size:1.5rem;
+    }
+}
