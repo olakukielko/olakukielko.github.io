@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+#welcomeComponent{
+    flex:4;
+    display: flex;
+    flex-direction: column;
+}
+#welcomeComponent .mainName{
+    cursor:pointer;
+}
+#welcomeComponent .nameTitle{
+    padding: 0 1em;
+}
+#home_area{
+    display: flex;
+    flex-direction: row;
+    height:100%;
+}
+#mainImg{
+    height: 70vh;
+}
+/* Mobile */
+@media only screen and (max-width: 650px) {
+    #home_area{
+        flex-direction: column;
+    }
+    #mainImg{
+        height: 100%;
+        width:auto;
+    }
+    #welcomeComponent{
+        width:100vw;
+        overflow-x:hidden;
+        justify-content: end;
+    }
+}

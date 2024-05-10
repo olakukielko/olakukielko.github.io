@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+#footer{
+  height:auto;
+  flex-direction: row;
+  overflow-x: clip;
+  background-color: var(--highlight);
+}
+#footer_wave_one{
+  fill: #d75d33;
+} 
+#footer_wave_two{
+  transform: translateY(-2em) rotate(0deg);
+  fill: var(--accent-darker);
+}
+#footer_wave_three{
+  fill: var(--accent);
+}
+/* Mobile */
+@media only screen and (max-width: 650px) {
+  #footer svg{
+     height:12rem;
+     margin-bottom: 3rem;
+  }
+}
