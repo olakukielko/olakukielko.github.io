@@ -1,6 +1,6 @@
 {
-  "short_name": "Aleks Codes",
-  "name": "Aleks Codes - Full Stack Developer",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
